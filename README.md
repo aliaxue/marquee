@@ -1,0 +1,4 @@
+marqueen
+========
+
+jquery continued marqueen
