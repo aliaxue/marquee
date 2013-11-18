@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery-continued-marqueen Demo</title>
+</head>
+<style type="text/css">
+table,tr,td,ul,li{
+	padding:0; margin:0;
+}
+</style>
+<script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../../static/js/jquery/plugins/jquery.continued.marquee.1.0.0.js" type="text/javascript"></script>
+<body>
+
+<div id="show-window-up" data-title="展示窗口" style="display:block;width:200px;height:120px;">
+	<div>
+    	<ul>
+        	<li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+        </ul>
+    </div>
+</div>
+
+<br/>
+
+
+<div id="show-window-down" data-title="展示窗口" style="display:block;width:200px;height:120px;">
+	<div>
+    	<ul>
+        	<li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+        </ul>
+    </div>
+</div>
+<br/>
+
+<div id="show-window-right" data-title="展示窗口" style="display:block;width:200px;height:120px;">
+	<div style="width:210px;">
+    	<ul>
+        	<li>文章列表橶要中文章列文章列表橶要中文章列表橶要中文章列表橶要中表橶要中文章列表橶要中文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+        </ul>
+    </div>
+</div>
+<br/>
+
+<div id="show-window-left" data-title="展示窗口" style="display:block;width:200px;height:120px;">
+	<div style="width:210px;">
+    	<ul>
+        	<li>文章列表橶要中文章列文章列表橶要中文章列表橶要中文章列表橶要中表橶要中文章列表橶要中文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+            <li>文章列表橶要中</li>
+        </ul>
+    </div>
+</div>
+<br/>
+
+
+
+<table cellpadding="0" style="border-collapse:collapse; border-spacing:0;" cellspacing="0" border="0"><tr><td></td></tr><tr><td></td></tr></table>
+
+
+<script language="javascript">
+/*
+该插件有四个方法，每一个方法都有两个可选参数，使用方法如下：
+$('#elementId').functionName(param1,param2);
+elementId,为要展示滚动的窗口的id
+functionName,为以下列出的四个可用的方法名
+param1,参数1,滚动的时间间隔，以毫秒为单位，数值越小，速度越快
+param2,参数2,一个boolean值，默认false,是否强制滚动，当展示窗口的内容未超出本窗口的显示空间时，默认不滚动，如果设置强制滚动，那么任何情况下都滚动
+*/
+
+
+$(document).ready(function(e) {
+    $('#show-window-up').marquee2Up();
+	$('#show-window-down').marquee2Down(30);
+	$('#show-window-right').marquee2Right(30);
+	$('#show-window-left').marquee2Left(30);
+});
+
+</script>
+</body>
+</html>
