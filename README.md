@@ -1,4 +1,4 @@
-marqueen
+marquee
 ========
 
 jquery continued marquee
